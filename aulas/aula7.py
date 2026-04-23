@@ -18,6 +18,8 @@ cv2.putText( #cv2.putText() é a função usada para adicionar texto à imagem. 
     2
 )
 
+cv2.resize(imagem, (640, 480)) # Redimensiona a imagem para 640x480 pixels
+
 cv2.imshow('Imagem com Texto', imagem) # Exibe a imagem com o texto adicionado em uma janela
 cv2.imwrite(os.path.join(BASE_DIR, '..', 'imagens', 'output', 'frutas_com_texto.jpg'), imagem) # Salva a imagem com o texto adicionado em um novo arquivo chamado 'frutas_com_texto.jpg'
 
